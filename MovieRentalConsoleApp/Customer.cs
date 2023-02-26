@@ -64,7 +64,7 @@ namespace MovieRentalConsoleApp
         //extra added functionality
         public void getCustomerTotalRentalPoints()
         {
-            Console.WriteLine(getName() + " got " + getTotalFrequentRenterPoints() + " frequent points");
+            Console.WriteLine(getName() + " earned " + getTotalFrequentRenterPoints() + " frequent points");
         }
 
         // extra added functonality for test case testing
