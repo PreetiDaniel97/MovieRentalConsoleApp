@@ -14,12 +14,10 @@ namespace MovieRentalConsoleApp
             this.title = title;
             setPriceCode(priceCode);
         }
-
         public String getTitle()
         {
             return title;
         }
-
         private void setPriceCode(string priceCode)
         {
             switch (priceCode)
@@ -37,17 +35,14 @@ namespace MovieRentalConsoleApp
                     throw new Exception("");
             }
         }
-
         public string getPriceCode()
         {
             return price.getPriceCode();
         }
-
         public double getCharge(int daysRented)
         {
             return price.getCharge(daysRented);
         }
-
         public int getFrequentRenterPoints(int daysRented)
         {
             return price.getFrequentRenterPoints(daysRented);

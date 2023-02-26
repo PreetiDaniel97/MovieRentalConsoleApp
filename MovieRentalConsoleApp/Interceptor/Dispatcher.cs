@@ -8,17 +8,15 @@ namespace MovieRentalConsoleApp.Interceptor
     {
         private List<IInterceptor> interceptorList = new List<IInterceptor>();
 
-        public void registerInterceptor(IInterceptor interceptor)
+        public void register(IInterceptor interceptor)
         {
             interceptorList.Add(interceptor);
         }
-
         public void dispatch(ContextObject context)
         {
             interceptorList.ForEach(x => x.intercept(context));
         }
-
-        public void removeInterceptor(IInterceptor interceptor)
+        public void remove(IInterceptor interceptor)
         {
             interceptorList.Remove(interceptor);
         }

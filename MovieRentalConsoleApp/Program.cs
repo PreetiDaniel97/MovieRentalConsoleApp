@@ -30,10 +30,10 @@ namespace MovieRentalConsoleApp
             var dispatcher = new Dispatcher();
 
             //register logging Interceptor with the dispatcher
-            dispatcher.registerInterceptor(new LoggingInterceptor());
+            dispatcher.register(new LoggingInterceptor());
 
             //register Timer Interceptor with the dispatcher
-            dispatcher.registerInterceptor(new TimerInterceptor());
+            dispatcher.register(new TimerInterceptor());
 
             // define contextObject
             var context = new ContextObject(customer);

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MovieRentalConsoleApp
 {
-    class ChildrensPrice: Price
+    public class ChildrensPrice: Price
     {
         public override string getPriceCode()
         {

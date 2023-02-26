@@ -33,7 +33,6 @@ namespace MovieRentalConsoleApp
             result += "You earned " + getTotalFrequentRenterPoints().ToString() + " frequent renter points";
             return result;
         }
-
         public String htmlStatement()
         {
             String result = "<h1>Rental record for <b>" + getName() + "</b></h1>\n";
@@ -44,7 +43,6 @@ namespace MovieRentalConsoleApp
             return result;
 
         }
-
         private double getTotalCharge()
         {
             double total = 0;
@@ -52,7 +50,6 @@ namespace MovieRentalConsoleApp
                 total += rental.getCharge();
             return total;
         }
-
         private int getTotalFrequentRenterPoints()
         {
             int total = 0;

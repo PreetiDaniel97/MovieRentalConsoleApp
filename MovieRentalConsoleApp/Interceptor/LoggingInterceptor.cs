@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MovieRentalConsoleApp.Interceptor
 {
-    class LoggingInterceptor: IInterceptor
+    public class LoggingInterceptor: IInterceptor
     {
         // logs the called method.
         public void intercept(ContextObject context)
